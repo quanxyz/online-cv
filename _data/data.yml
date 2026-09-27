@@ -10,7 +10,7 @@ sidebar:
 
   # Profile information
   name: Truong Duc Quan
-  tagline: Computer Science Sophomore
+  tagline: AI Specialist & Software Engineer | Computer Science @ HCMUS
   avatar: # place a 100x100 picture inside /assets/images/ folder if available
 
   # Sidebar links & contact
@@ -40,12 +40,11 @@ sidebar:
 
     - item: Algorithm Design & Complexity
 
-    - item: Distributed Systems & Protocols
-
 career-profile:
   title: Career Profile
   summary: |
-    High-achieving Computer Science undergraduate at **VNUHCM - University of Science (HCMUS)** with a **3.88 / 4.0 GPA** and **IELTS 7.5**. Possesses rigorous foundations in data structures, algorithms, discrete mathematics, and systems programming across **Python, C++, and Java**. Experienced in architecting low-level binary network protocols, spatial indexing data structures (3D Octrees), and real-time routing engines. Demonstrates exceptional aptitude for code review, edge-case analysis, step-by-step mathematical reasoning, and automated testing.
+    High-achieving Computer Science undergraduate at **VNUHCM - University of Science (HCMUS)** with a **3.88 / 4.0 GPA** and **IELTS 7.5**. Possesses rigorous theoretical and practical foundations in data structures, algorithms, discrete mathematics, and systems programming across **Python, C++, and Java**.
+
 education:
   title: Education
   info:
@@ -54,38 +53,37 @@ education:
     time: 2025 - Present (Expected 2029)
     details: |
       - **Cumulative GPA:** **3.88 / 4.0**
-      - **Relevant Coursework:** Data Structures & Algorithms, Object-Oriented Programming, Combinatorics & Graph Theory, Discrete Mathematics & Logic, Linear Algebra, Computer Networks, Algorithm Design & Optimization.
-      - **Academic Focus:** Systems Programming, High-Performance Computing, AI Model Evaluation.
+      - **Relevant Coursework:** Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Combinatorics & Graph Theory, Discrete Mathematics & Logic, Linear Algebra, Computer Networks, Algorithm Design & Optimization.
+      - **Academic Focus:** Algorithm Optimization, High-Performance Systems, AI Model Evaluation.
 
 experiences:
   title: Personal & Academic Projects
   info:
     time: 2026
-    company: Socket File Transfer System (Capstone Project)
-    details:
-      - Architected a multi-threaded client-server file transmission system from scratch using raw Python TCP sockets with zero external networking libraries.
-      - Authored a custom Mini-RFC binary framing protocol (5-byte fixed header, 14 opcodes, Big-Endian), completely eliminating TCP packet coalescing and fragmentation.
-      - Implemented offset-based resumable transfers, constant-memory chunked streaming (1MB chunks) for multi-GB files, and dual-layer MD5 checksum verification (in-transit & on-disk).
-      - Formulated a sliding-window rate limiter supporting dynamic bandwidth allocation across active clients up to a 500 MB/s server ceiling.
-      - Engineered an exhaustive automated Pytest suite of **84 test cases across 13 test suites** (covering network faults, drops, race conditions, and memory leaks).
-      - Collaborated with AI agents to explore protocol design alternatives; systematically audited and refined AI-generated code for security, memory safety, and boundary correctness.
+    project: Socket File Transfer System (Capstone Project)
+    details: |
+      - Architected a multi-threaded client-server file transmission system from scratch using raw Python TCP sockets with zero external networking libraries, supporting multi-gigabyte transfers with constant RAM usage.
+      - Authored a formal **Mini-RFC binary framing protocol** with a 5-byte fixed header (Big-Endian `uint32` length + `uint8` opcode) and **14 standard opcodes**, completely preventing TCP packet coalescing (*sticky packets*) and fragmentation (*broken frames*).
+      - Implemented **offset-based resumable transfers**, dual-layer MD5 checksum verification (in-transit & on-disk), user namespace isolation, and chunk-by-chunk sliding-window bandwidth throttling (up to 500 MB/s).
+      - Constructed an exhaustive automated testing harness of **84 unit and integration tests across 13 test files** (evaluating network faults, sudden drops, race conditions, and memory leaks), achieving a **100% pass rate**.
+      - **AI Collaboration Highlight:** Audited and validated AI-generated networking logic; identified and resolved critical stream demarcation flaws and concurrency race conditions, establishing strict validation rubrics.
 
     time: 2025
-    company: 3D UAV Collision Avoidance & Spatial Indexing System
+    project: 3D UAV Collision Avoidance & Spatial Indexing System
     details: |
-      - Researched, implemented, and benchmarked real-time 3D collision avoidance for autonomous drone fleets, reducing spatial query complexity from **O(N^2)** to **O(N log N)** using recursive Octree spatial partitioning in C++ and Python.
-      - Formulated physics-based avoidance mechanics with dynamic safety zones and inverse-distance repulsion vector fields.
-      - Conducted extensive benchmarks on synthetic distributions and Kaggle telemetry datasets; identified the exact crossover threshold (**N = 32 drones**) where Octree outperforms brute force after amortizing tree construction.
-      - Tuned optimal Octree node capacity to **6–12 agents**, maximizing spatial pruning efficiency with **zero missed collisions across 400 active drones**.
-      - Built an interactive 3D visualizer using PyVista to render flight vectors, safety barriers, and real-time avoidance maneuvers.
+      - Researched and implemented real-time 3D collision avoidance for autonomous drone fleets, reducing spatial neighbor query complexity from **O(N²)** (brute force) to **O(N log N)** via recursive Octree spatial partitioning in C++ and Python.
+      - Modeled physics-based collision warning boundaries and dynamic inverse-distance repulsion vector fields to calculate instantaneous escape trajectories for conflicting drones.
+      - Conducted empirical benchmarks across synthetic formations and Kaggle UAV telemetry data; identified the exact **crossover threshold (N = 32 drones)** where Octree outpaces brute force after amortizing tree construction overhead.
+      - Tuned optimal Octree node capacity to **6–12 agents**, maximizing spatial pruning efficiency, and validated **100% collision detection accuracy (zero missed collisions across 400 active drones)**.
+      - Built an interactive 3D simulation visualizer using **PyVista** to render flight vectors, safety barriers, and real-time avoidance maneuvers.
 
     time: 2026
-    company: Urban Traffic Simulator & Routing Engine
+    project: Urban Traffic Simulator & Real-Time Routing Engine
     details: |
-      - Developed a real-time urban traffic simulator combining live OpenStreetMap vector topology with a high-performance C++17 micro-simulation engine.
-      - Implemented and benchmarked **Dijkstra**, **A\***, and **BFS** shortest-path algorithms, analyzing computation latency and node expansions under varying network congestion.
-      - Modeled vehicular micro-simulation behaviors including car-following logic, intersection right-of-way conflict resolution, and automated deadlock recovery.
-      - Engineered a lightweight Python bridge using only standard libraries to stream engine state to a live web frontend rendered with Leaflet.js.
+      - Developed a real-time urban traffic simulator combining live geographic vector topology from OpenStreetMap with a high-performance C++17 micro-simulation engine.
+      - Implemented and benchmarked three core pathfinding algorithms (<strong>Dijkstra, A*, and BFS</strong>), analyzing computational latency, node expansions, and memory overhead under dynamic network loads.
+      - Engineered realistic vehicular micro-simulation models including car-following logic, intersection right-of-way rules, dynamic traffic signals, road closure injection, and automated **deadlock detection and recovery**.
+      - Designed a zero-external-dependency Python HTTP bridge to serialize simulation engine state into JSON streams for interactive browser rendering via Leaflet.js.
 
 certifications:
   title: Certifications & Language
@@ -97,7 +95,6 @@ certifications:
     details: |
       CEFR C1 Level (Full Professional Proficiency). Certified high-level English proficiency in written and verbal communication, enabling precise technical writing, logical reasoning exposition, and prompt evaluation.
 
-
 skills:
   title: Skills &amp; Proficiency
   toolset:
@@ -108,7 +105,7 @@ skills:
   - name: Data Structures &amp; Algorithms (DSA, Graphs, Octrees)
 
   - name: AI Model Evaluation &amp; Code Review (Logic Verification)
-  
+
   - name: Discrete Mathematics, Logic &amp; Big-O Analysis
 
   - name: Java &amp; Object-Oriented Design (OOP)
