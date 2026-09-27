@@ -9,7 +9,7 @@ sidebar:
   education: False # set to False to display education with GPA & coursework in main section
 
   # Profile information
-  name: Truong Duc Quan
+  name: Quan Truong
   tagline: Computer Science Sophomore @ HCMUS
   avatar: # place a 100x100 picture inside /assets/images/ folder if available
 
@@ -56,34 +56,17 @@ education:
       - **Relevant Coursework:** Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Combinatorics & Graph Theory, Discrete Mathematics & Logic, Linear Algebra, Computer Networks, Algorithm Design & Optimization.
       - **Academic Focus:** Algorithm Optimization, High-Performance Systems, AI Model Evaluation.
 
-experiences:
-  title: Personal & Academic Projects
-  info:
-    time: 2026
-    project: Socket File Transfer System (Capstone Project)
-    details: |
-      - Architected a multi-threaded client-server file transmission system from scratch using raw Python TCP sockets with zero external networking libraries, supporting multi-gigabyte transfers with constant RAM usage.
-      - Authored a formal **Mini-RFC binary framing protocol** with a 5-byte fixed header (Big-Endian `uint32` length + `uint8` opcode) and **14 standard opcodes**, completely preventing TCP packet coalescing (*sticky packets*) and fragmentation (*broken frames*).
-      - Implemented **offset-based resumable transfers**, dual-layer MD5 checksum verification (in-transit & on-disk), user namespace isolation, and chunk-by-chunk sliding-window bandwidth throttling (up to 500 MB/s).
-      - Constructed an exhaustive automated testing harness of **84 unit and integration tests across 13 test files** (evaluating network faults, sudden drops, race conditions, and memory leaks), achieving a **100% pass rate**.
-      - **AI Collaboration Highlight:** Audited and validated AI-generated networking logic; identified and resolved critical stream demarcation flaws and concurrency race conditions, establishing strict validation rubrics.
-
-    time: 2025
-    project: 3D UAV Collision Avoidance & Spatial Indexing System
-    details: |
-      - Researched and implemented real-time 3D collision avoidance for autonomous drone fleets, reducing spatial neighbor query complexity from **O(N²)** (brute force) to **O(N log N)** via recursive Octree spatial partitioning in C++ and Python.
-      - Modeled physics-based collision warning boundaries and dynamic inverse-distance repulsion vector fields to calculate instantaneous escape trajectories for conflicting drones.
-      - Conducted empirical benchmarks across synthetic formations and Kaggle UAV telemetry data; identified the exact **crossover threshold (N = 32 drones)** where Octree outpaces brute force after amortizing tree construction overhead.
-      - Tuned optimal Octree node capacity to **6–12 agents**, maximizing spatial pruning efficiency, and validated **100% collision detection accuracy (zero missed collisions across 400 active drones)**.
-      - Built an interactive 3D simulation visualizer using **PyVista** to render flight vectors, safety barriers, and real-time avoidance maneuvers.
-
-    time: 2026
-    project: Urban Traffic Simulator & Real-Time Routing Engine
-    details: |
-      - Developed a real-time urban traffic simulator combining live geographic vector topology from OpenStreetMap with a high-performance C++17 micro-simulation engine.
-      - Implemented and benchmarked three core pathfinding algorithms (<strong>Dijkstra, A*, and BFS</strong>), analyzing computational latency, node expansions, and memory overhead under dynamic network loads.
-      - Engineered realistic vehicular micro-simulation models including car-following logic, intersection right-of-way rules, dynamic traffic signals, road closure injection, and automated **deadlock detection and recovery**.
-      - Designed a zero-external-dependency Python HTTP bridge to serialize simulation engine state into JSON streams for interactive browser rendering via Leaflet.js.
+projects:
+  title: Featured Projects Summary
+  intro: >
+    Highlighted open-source systems and algorithmic implementations demonstrating proficiency in algorithms, systems programming, and software verification.
+  assignments:
+  - title: Socket File Transfer System
+    tagline: "High-performance raw TCP binary framing protocol with 84 automated pytest test cases (100% pass), offset resume, and sliding-window bandwidth throttling."
+  - title: 3D UAV Collision Avoidance
+    tagline: "Spatial indexing with 3D Octree reducing neighbor distance queries from O(N^2) to O(N log N) with 100% collision detection accuracy and PyVista 3D visualization."
+  - title: Urban Traffic Simulator
+    tagline: "C++17 micro-simulation engine integrating live OpenStreetMap graph topology, Dijkstra/A*/BFS pathfinding, and interactive Leaflet browser interface."
 
 certifications:
   title: Certifications & Language
@@ -99,18 +82,22 @@ skills:
   title: Skills &amp; Proficiency
   toolset:
   - name: Python (Sockets, Concurrency, Pytest, PyVista)
+    level: 80%
 
   - name: C++ &amp; Modern C++17 (Systems, CMake, Algorithms)
+    level: 85%
 
   - name: Data Structures &amp; Algorithms (DSA, Graphs, Octrees)
+    level: 82%
 
   - name: AI Model Evaluation &amp; Code Review (Logic Verification)
-
-  - name: Discrete Mathematics, Logic &amp; Big-O Analysis
+    level: 79%
 
   - name: Java &amp; Object-Oriented Design (OOP)
+    level: 80%
 
   - name: Git, GitHub &amp; Technical Writing
+    level: 80%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
