@@ -1,286 +1,119 @@
 #
-# Be aware that even a small syntax error here can lead to failures in output.
+# Truong Duc Quan — Resume Data Configuration
+# Target: AI Specialist / AI Evaluator / Coding & Math Specialist (Outlier & Alignerr)
 #
 
 sidebar:
   position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  about: False # set to False to remove template instructions
+  education: False # set to False to display education with GPA & coursework in main section
 
   # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  name: Truong Duc Quan
+  tagline: Computer Science Sophomore
+  avatar: # place a 100x100 picture inside /assets/images/ folder if available
 
-  # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  # Sidebar links & contact
+  email: truong.quan622007@gmail.com
+  phone: "(+84) 336 438 168"
+  citizenship: Ho Chi Minh City, Vietnam
+  timezone: Asia/Ho_Chi_Minh
+  github: quanxyz
+  website:
+  linkedin:
+  telegram:
+  pdf: # Custom PDF link if available
 
   languages:
     title: Languages
     info:
     - idiom: English
+      level: Full Professional (IELTS 7.5 / C1)
+
+    - idiom: Vietnamese
       level: Native
-
-    - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
 
   interests:
     title: Interests
     info:
-    - item: Climbing
-      link:
+    - item: AI Alignment & LLM Evaluation
 
+    - item: Algorithm Design & Complexity
 
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
-
+    - item: Distributed Systems & Protocols
 
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    High-achieving Computer Science undergraduate at **VNUHCM - University of Science (HCMUS)** with a **3.88 / 4.0 GPA** and **IELTS 7.5**. Possesses rigorous foundations in data structures, algorithms, discrete mathematics, and systems programming across **Python, C++, and Java**. Experienced in architecting low-level binary network protocols, spatial indexing data structures (3D Octrees), and real-time routing engines. Demonstrates exceptional aptitude for code review, edge-case analysis, step-by-step mathematical reasoning, and automated testing.
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
+  - degree: Bachelor of Science in Computer Science
+    university: VNUHCM - University of Science (HCMUS)
+    time: 2025 - Present (Expected 2029)
     details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      - **Cumulative GPA:** **3.88 / 4.0**
+      - **Relevant Coursework:** Data Structures & Algorithms, Object-Oriented Programming, Combinatorics & Graph Theory, Discrete Mathematics & Logic, Linear Algebra, Computer Networks, Algorithm Design & Optimization.
+      - **Academic Focus:** Systems Programming, High-Performance Computing, AI Model Evaluation.
 
 experiences:
-  title: Experiences
+  title: Personal & Academic Projects
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+    time: 2026
+    company: Socket File Transfer System (Capstone Project)
+    details:
+      - Architected a multi-threaded client-server file transmission system from scratch using raw Python TCP sockets with zero external networking libraries.
+      - Authored a custom Mini-RFC binary framing protocol (5-byte fixed header, 14 opcodes, Big-Endian), completely eliminating TCP packet coalescing and fragmentation.
+      - Implemented offset-based resumable transfers, constant-memory chunked streaming (1MB chunks) for multi-GB files, and dual-layer MD5 checksum verification (in-transit & on-disk).
+      - Formulated a sliding-window rate limiter supporting dynamic bandwidth allocation across active clients up to a 500 MB/s server ceiling.
+      - Engineered an exhaustive automated Pytest suite of **84 test cases across 13 test suites** (covering network faults, drops, race conditions, and memory leaks).
+      - Collaborated with AI agents to explore protocol design alternatives; systematically audited and refined AI-generated code for security, memory safety, and boundary correctness.
+
+    time: 2025
+    company: 3D UAV Collision Avoidance & Spatial Indexing System
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
+      - Researched, implemented, and benchmarked real-time 3D collision avoidance for autonomous drone fleets, reducing spatial query complexity from **O(N^2)** to **O(N log N)** using recursive Octree spatial partitioning in C++ and Python.
+      - Formulated physics-based avoidance mechanics with dynamic safety zones and inverse-distance repulsion vector fields.
+      - Conducted extensive benchmarks on synthetic distributions and Kaggle telemetry datasets; identified the exact crossover threshold (**N = 32 drones**) where Octree outperforms brute force after amortizing tree construction.
+      - Tuned optimal Octree node capacity to **6–12 agents**, maximizing spatial pruning efficiency with **zero missed collisions across 400 active drones**.
+      - Built an interactive 3D visualizer using PyVista to render flight vectors, safety barriers, and real-time avoidance maneuvers.
+
+    time: 2026
+    company: Urban Traffic Simulator & Routing Engine
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      - Developed a real-time urban traffic simulator combining live OpenStreetMap vector topology with a high-performance C++17 micro-simulation engine.
+      - Implemented and benchmarked **Dijkstra**, **A\***, and **BFS** shortest-path algorithms, analyzing computation latency and node expansions under varying network congestion.
+      - Modeled vehicular micro-simulation behaviors including car-following logic, intersection right-of-way conflict resolution, and automated deadlock recovery.
+      - Engineered a lightweight Python bridge using only standard libraries to stream engine state to a live web frontend rendered with Leaflet.js.
 
 certifications:
-  title: Certifications
+  title: Certifications & Language
   list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
+  - name: IELTS Academic (Overall Band 7.5)
+    start: 2023
+    end: 2025
+    organization: IDP / British Council
     details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+      CEFR C1 Level (Full Professional Proficiency). Certified high-level English proficiency in written and verbal communication, enabling precise technical writing, logical reasoning exposition, and prompt evaluation.
 
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-projects:
-  title: Projects
-  intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-publications:
-  title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
-  papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
-recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
 
 skills:
   title: Skills &amp; Proficiency
-
   toolset:
-  - name: Python & Django
-    level: 98%
+  - name: Python (Sockets, Concurrency, Pytest, PyVista)
 
-  - name: Javascript & jQuery
-    level: 98%
+  - name: C++ &amp; Modern C++17 (Systems, CMake, Algorithms)
 
-  - name: Angular
-    level: 98%
+  - name: Data Structures &amp; Algorithms (DSA, Graphs, Octrees)
 
-  - name: HTML5 & CSS
-    level: 95%
+  - name: AI Model Evaluation &amp; Code Review (Logic Verification)
+  
+  - name: Discrete Mathematics, Logic &amp; Big-O Analysis
 
-  - name: Ruby on Rails
-    level: 85%
+  - name: Java &amp; Object-Oriented Design (OOP)
 
-  - name: Sketch & Photoshop
-    level: 60%
+  - name: Git, GitHub &amp; Technical Writing
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
